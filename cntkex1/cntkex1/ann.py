@@ -75,4 +75,3 @@ print("matrix h = %f" % matrix_feed_forward_calc(3, x, w, b))
 
 print("The local minimum occurs at %f" % grad())
 
-read_text_file('D:\MachineLearning\Python\cntkex1\cntkex1\cntklstm.py')

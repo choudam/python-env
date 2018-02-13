@@ -1,8 +1,3 @@
-import pandas
-import logging
-import sys
-import io
-import math
 
 def Nprime(cnt:int):
     nextNumber = 2;
@@ -23,7 +18,6 @@ def Nprime(cnt:int):
                 cnt-=1
             nextNumber+=1;
     return primelist;
-#print(primelist);
 
 
 
