@@ -1,3 +1,4 @@
+import math
 
 def Nprime(cnt:int):
     nextNumber = 2;
