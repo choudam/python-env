@@ -37,15 +37,15 @@ def worker(num,bi,ei):
 #        i += 1
     for i in range(bi,ei):
         tempsum +=  i
-    
+    durationTime = time.time() - starttime
     lock.acquire()
     finalsum += tempsum
-    print('Time elapsed: %d %f\n' % (num, time.time() - starttime))
+    print('Time elapsed: %d %f\n' % (num, durationTime))
     lock.release()
     return
 
-threadscount = 8
-numcount = 1000000
+threadscount = 1
+numcount = 1000000000
 ransize = int(numcount / threadscount)
 print('ransize %d\n' % ransize)
 
@@ -57,12 +57,11 @@ for i in range(threadscount):
     threads.append(t)
     t.start()
     
-
 # join threads
 for i in range(threadscount):
     threads[i].join()
     
-print('Time elapsed: %d %f \n' % (finalsum, time.time() - startTime))
+print('Total time elapsed: %d %f \n' % (finalsum, time.time() - startTime))
 
 
     
