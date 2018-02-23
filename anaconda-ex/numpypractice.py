@@ -11,6 +11,6 @@ import time
 
 startTime = time.time()
 
-finalsum = numpy.sum(range(1000000000))
+finalsum = numpy.sum(range(100000000))
 
 print('Total time elapsed: %d %f \n' % (finalsum, time.time() - startTime))

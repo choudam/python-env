@@ -45,7 +45,7 @@ def worker(num,bi,ei):
     return
 
 threadscount = 1
-numcount = 1000000000
+numcount = 100000000
 ransize = int(numcount / threadscount)
 print('ransize %d\n' % ransize)
 
